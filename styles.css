@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Header Styles */
+h1.my-4.text-center {
+    color: #007bff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Buttons */
+button {
+    margin-top: 10px;
+}
+
+button.btn-outline-primary,
+button.btn-primary {
+    border-radius: 20px;
+}
+
+button.btn-outline-primary:hover,
+button.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Table Styles */
+.table {
+    margin-top: 40px;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table thead th {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.table tbody tr {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table tbody tr th,
+.table tbody tr td {
+    border: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    h1.my-4.text-center {
+        font-size: 1.75rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .table {
+        margin-top: 20px;
+    }
+}
