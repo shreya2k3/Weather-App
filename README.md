@@ -10,10 +10,6 @@ Welcome to the Weather App! This application provides real-time weather informat
 - 🌈 Dynamic background images based on weather conditions
 - 📱 Responsive design for different screen sizes
 
-## Demo
-
-You can view a live demo of the Weather App [here](#).
-
 ## Installation
 
 1. **Clone the repository:**
