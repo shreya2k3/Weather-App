@@ -1,18 +1,25 @@
 /* General Styles */
 body {
-    background-color: #f8f9fa;
+    background-color: #e0f7fa; /* Light blue background color */
     font-family: Arial, sans-serif;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 /* Navbar Styles */
-.navbar-brand {
-    font-weight: bold;
-    color: #007bff !important;
+.navbar {
+    background-color: #004085; /* Dark blue navbar */
+    margin-bottom: 20px;
 }
 
-.navbar {
-    margin-bottom: 20px;
+.custom-navbar {
+    background-color: #004085; /* Dark blue navbar */
+}
+
+.custom-navbar .navbar-brand {
+    font-weight: bold;
+    color: #ffffff !important; /* White text color for navbar brand */
 }
 
 /* Header Styles */
@@ -26,15 +33,26 @@ h1.my-4.text-center {
 .card {
     border: none;
     border-radius: 10px;
-    transition: transform 0.2s;
+    transition: transform 0.3s, background 0.5s, box-shadow 0.3s;
+    height: 300px; /* Set a fixed height for all cards */
+    width: 300px; /* Increased the width for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to top, #ffebf0 0%, #ffffff 100%); /* Initial gradient background */
+    margin: 20px; /* Add some margin between cards */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+    background: linear-gradient(to top, #ff69b4 0%, #ffebf0 100%); /* Gradient background to dark pink on hover */
 }
 
 .card-header {
-    background-color: #007bff;
+    background-color: #0056b3; /* Dark blue header */
     color: white;
     border-radius: 10px 10px 0 0;
 }
@@ -104,5 +122,10 @@ button.btn-primary:hover {
 
     .table {
         margin-top: 20px;
+    }
+
+    .card {
+        height: 250px; /* Adjust the height for smaller screens */
+        width: 100%; /* Make the card take full width on smaller screens */
     }
 }

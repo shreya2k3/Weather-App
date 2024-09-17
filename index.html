@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg custom-navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Weather App</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,10 +16,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About this app</a>
+              <!-- <a class="nav-link" href="#">About this app</a> -->
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,7 +34,7 @@
               
             </li>
             <li class="nav-item">
-              <a class="nav-link" >Usage Guide</a>
+              <!-- <a class="nav-link" >Usage Guide</a> -->
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -84,8 +84,8 @@
         </div>
       </div>
       <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-bg-primary border-primary">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
             <h4 class="my-0 fw-normal">Wind/Sun Info</h4>
           </div>
           <div class="card-body">
@@ -109,8 +109,82 @@
       <table class="table text-center">
         <thead>
           <tr>
-            <th style="width: 34%;"></th>
-            <th style="width: 22%;"> Cloud_pct </th>
+            <!-- <th style="width: 34%;"></th> -->
+                <th style="width: 22%;">City</th>
+                <th style="width: 22%;">Cloud Cover</th>
+                <th style="width: 22%;">Temp</th>
+                <th style="width: 22%;">Feels Like</th>
+                <th style="width: 22%;">Humidity</th>
+                <th style="width: 22%;">Min Temp</th>
+                <th style="width: 22%;">Max Temp</th>
+                <th style="width: 22%;">Wind Speed</th>
+                <th style="width: 22%;">Wind Direction</th>
+                <th style="width: 22%;">Sunrise</th>
+                <th style="width: 22%;">Sunset</th>
+              </tr>
+            </thead>
+            <tbody id="cityTableBody">
+              <tr data-city="Chennai">
+                  <th scope="row" class="text-start">Chennai</th>
+                  <td></td> 
+                  <td></td> 
+                  <td></td> 
+                  <td></td> 
+                  <td></td> 
+                  <td></td>
+                  <td></td> 
+                  <td></td> 
+                  <td></td>
+                  <td></td>
+              </tr>
+              <tr data-city="Mumbai">
+                  <th scope="row" class="text-start">Mumbai</th>
+                  <td></td> <!-- Cloud Cover -->
+                  <td></td> <!-- Temp -->
+                  <td></td> <!-- Feels Like -->
+                  <td></td> <!-- Humidity -->
+                  <td></td> <!-- Min Temp -->
+                  <td></td> <!-- Max Temp -->
+                  <td></td> <!-- Wind Speed -->
+                  <td></td> <!-- Wind Direction -->
+                  <td></td> <!-- Sunrise -->
+                  <td></td> <!-- Sunset -->
+              </tr>
+              <tr data-city="Lucknow">
+                <th scope="row" class="text-start">Lucknow</th>
+                <td></td> <!-- Cloud Cover -->
+                <td></td> <!-- Temp -->
+                <td></td> <!-- Feels Like -->
+                <td></td> <!-- Humidity -->
+                <td></td> <!-- Min Temp -->
+                <td></td> <!-- Max Temp -->
+                <td></td> <!-- Wind Speed -->
+                <td></td> <!-- Wind Direction -->
+                <td></td> <!-- Sunrise -->
+                <td></td> <!-- Sunset -->
+            </tr>
+            <tr data-city="Kolkata">
+                <th scope="row" class="text-start">Kolkata</th>
+                <td></td> <!-- Cloud Cover -->
+                <td></td> <!-- Temp -->
+                <td></td> <!-- Feels Like -->
+                <td></td> <!-- Humidity -->
+                <td></td> <!-- Min Temp -->
+                <td></td> <!-- Max Temp -->
+                <td></td> <!-- Wind Speed -->
+                <td></td> <!-- Wind Direction -->
+                <td></td> <!-- Sunrise -->
+                <td></td> <!-- Sunset -->
+            </tr>
+              <!-- Repeat for other cities -->
+          </tbody>
+          
+          </table>
+        </div>
+      </main>
+    </div>
+            
+            <!-- <th style="width: 22%;"> Cloud_pct </th>
 <th style="width: 22%;"> Temp </th>
 <th style="width: 22%;"> Feels_like </th>
 <th style="width: 22%;"> Humidity </th>
@@ -187,7 +261,7 @@
     </div>
   </main>
 
-</div>
+</div> -->
 
 
     
@@ -196,5 +270,6 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css"> 
+    
 </body>
 </html>
